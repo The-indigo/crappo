@@ -1,7 +1,13 @@
 .crypto-blue-card {
     background-color: #2B076E;
+    color: #fff;
+}
+
+.features-section {
+    background-color: #2B076E;
 }
 
 .trade-section {
     background-color: #FBFCFE;
+    color: #0D0D2B;
 }

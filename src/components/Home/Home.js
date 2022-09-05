@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-import "./Home.css"
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -76,37 +76,90 @@ const Home = () => {
 
       <section className="trade-section">
         <div></div>
-         <h4>Trade securely and market the high growth cryptocurrencies.</h4>
+        <h4>Trade securely and market the high growth cryptocurrencies.</h4>
         <div className="trade-securely-div">
-
           <div className="crypto-div crypto-blue-card">
             <img src="./images/bitcon.png" />
             <div>
               <h5>Bitcoin</h5>
               <p>BTC</p>
             </div>
-            <p>Digital currency in which a record of transactions is maintained.</p>
+            <p>
+              Digital currency in which a record of transactions is maintained.
+            </p>
           </div>
-                    <div className="crypto-div crypto-white-card">
+          <div className="crypto-div crypto-white-card">
             <img src="./images/ethereum.png" />
             <div>
               <h5>Ethereum</h5>
               <p>ETH</p>
             </div>
-            <p>Blockchain technology to create and run decentralized digital applications.</p>
+            <p>
+              Blockchain technology to create and run decentralized digital
+              applications.
+            </p>
           </div>
 
-                              <div className="crypto-div crypto-white-card">
+          <div className="crypto-div crypto-white-card">
             <img src="./images/litecoin.png" />
             <div>
               <h5>Litecoin</h5>
               <p>LTC</p>
             </div>
-            <p>Cryptocurrency that enables instant payments to anyone in the world.</p>
+            <p>
+              Cryptocurrency that enables instant payments to anyone in the
+              world.
+            </p>
           </div>
-
-
         </div>
+      </section>
+
+      <section className="features-section">
+        <h5>
+          Market sentiments,portfolio, and run the infrastructure of your choice
+        </h5>
+
+        <div className="features-section-card">
+          <div>
+            <h6>Invest Smart</h6>
+            <p>
+              Get full statistic information about the behaviour of buyers and
+              sellers will help you to make the decision.{" "}
+            </p>
+            <Button/>
+          </div>
+          
+          <div className="features-section-crad-img-div">
+            <img src="./images/features-1-img.png" />
+          </div>
+        </div>
+
+                <div className="features-section-card">
+          <div>
+            <h6>Detailed Statistics</h6>
+            <p>
+             View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.{" "}
+            </p>
+            <Button/>
+          </div>
+          <div className="features-section-crad-img-div">
+            <img src="./images/features-2-img.png" />
+          </div>
+        </div>
+
+                        <div className="features-section-card">
+          <div>
+            <h6>Grow your profit and track your investments</h6>
+            <p>
+           Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.{" "}
+            </p>
+            <Button/>
+          </div>
+          <div className="features-section-crad-img-div">
+            <img src="./images/features-3-img.png" />
+          </div>
+        </div>
+
 
       </section>
     </main>
