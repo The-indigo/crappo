@@ -1,4 +1,5 @@
 import Button from "../Button/Button";
+import "./Home.css"
 
 const Home = () => {
   return (
@@ -71,6 +72,42 @@ const Home = () => {
           Let’s check your hash rate to see how much you will earn today,
           Exercitation veniam consequat sunt nostrud amet.
         </p>
+      </section>
+
+      <section className="trade-section">
+        <div></div>
+         <h4>Trade securely and market the high growth cryptocurrencies.</h4>
+        <div className="trade-securely-div">
+
+          <div className="crypto-div crypto-blue-card">
+            <img src="./images/bitcon.png" />
+            <div>
+              <h5>Bitcoin</h5>
+              <p>BTC</p>
+            </div>
+            <p>Digital currency in which a record of transactions is maintained.</p>
+          </div>
+                    <div className="crypto-div crypto-white-card">
+            <img src="./images/ethereum.png" />
+            <div>
+              <h5>Ethereum</h5>
+              <p>ETH</p>
+            </div>
+            <p>Blockchain technology to create and run decentralized digital applications.</p>
+          </div>
+
+                              <div className="crypto-div crypto-white-card">
+            <img src="./images/litecoin.png" />
+            <div>
+              <h5>Litecoin</h5>
+              <p>LTC</p>
+            </div>
+            <p>Cryptocurrency that enables instant payments to anyone in the world.</p>
+          </div>
+
+
+        </div>
+
       </section>
     </main>
   );
