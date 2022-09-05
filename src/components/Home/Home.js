@@ -130,7 +130,7 @@ const Home = () => {
           </div>
           
           <div className="features-section-crad-img-div">
-            <img src="./images/features-1-img.png" />
+            <img src="./images/feature-1-img.png" />
           </div>
         </div>
 
@@ -143,7 +143,7 @@ const Home = () => {
             <Button/>
           </div>
           <div className="features-section-crad-img-div">
-            <img src="./images/features-2-img.png" />
+            <img src="./images/feature-2-img.png" />
           </div>
         </div>
 
@@ -156,12 +156,24 @@ const Home = () => {
             <Button/>
           </div>
           <div className="features-section-crad-img-div">
-            <img src="./images/features-3-img.png" />
+            <img src="./images/feature-3-img.png" />
           </div>
         </div>
-
-
       </section>
+      <section className="startmining-section">
+        <div className="startmining-text-div">
+          <h6>Start mining now</h6>
+          <p>Join now with CRAPPO to get the latest news and start mining now</p>
+        </div>
+        <div className="startmining-input-div">
+          <input type={"text"} />
+          <Button buttonText={"Subscribe"}/>
+        </div>
+      </section>
+
+      <footer>
+        
+      </footer>
     </main>
   );
 };

@@ -3,7 +3,7 @@ const Button = ({buttonText}) => {
     return (
         <>
         <button className="button">
-            {buttonText}
+            {buttonText? buttonText:"Learn More"}
           </button>
         </>
     )
