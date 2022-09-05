@@ -126,34 +126,36 @@ const Home = () => {
               Get full statistic information about the behaviour of buyers and
               sellers will help you to make the decision.{" "}
             </p>
-            <Button/>
+            <Button />
           </div>
-          
+
           <div className="features-section-crad-img-div">
             <img src="./images/feature-1-img.png" />
           </div>
         </div>
 
-                <div className="features-section-card">
+        <div className="features-section-card">
           <div>
             <h6>Detailed Statistics</h6>
             <p>
-             View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.{" "}
+              View all mining related information in realtime, at any point at
+              any location and decide which polls you want to mine in.{" "}
             </p>
-            <Button/>
+            <Button />
           </div>
           <div className="features-section-crad-img-div">
             <img src="./images/feature-2-img.png" />
           </div>
         </div>
 
-                        <div className="features-section-card">
+        <div className="features-section-card">
           <div>
             <h6>Grow your profit and track your investments</h6>
             <p>
-           Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.{" "}
+              Use advanced analytical tools. Clear TradingView charts let you
+              track current and historical profit investments.{" "}
             </p>
-            <Button/>
+            <Button />
           </div>
           <div className="features-section-crad-img-div">
             <img src="./images/feature-3-img.png" />
@@ -163,16 +165,41 @@ const Home = () => {
       <section className="startmining-section">
         <div className="startmining-text-div">
           <h6>Start mining now</h6>
-          <p>Join now with CRAPPO to get the latest news and start mining now</p>
+          <p>
+            Join now with CRAPPO to get the latest news and start mining now
+          </p>
         </div>
         <div className="startmining-input-div">
           <input type={"text"} />
-          <Button buttonText={"Subscribe"}/>
+          <Button buttonText={"Subscribe"} />
         </div>
       </section>
 
-      <footer>
-        
+      <footer className="footer">
+        <div className="footer-logo-image">
+          <img src="./images/logo.png" />
+        </div>
+        <div className="quick-link-div">
+          <h6>Quick Link</h6>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div className="quick-link-div">
+          <h6>Resources</h6>
+          <a href="#">Download Whitepaper</a>
+          <a href="#">Smart Token</a>
+          <a href="#">Blockchain Explorer</a>
+          <a href="#">Crypto Api</a>
+          <a href="#">Interest</a>
+        </div>
+
+        <div className="quick-link-div">
+          <h6>We accept following payment systems</h6>
+        </div>
       </footer>
     </main>
   );
