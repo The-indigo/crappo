@@ -5,32 +5,32 @@ import "./Nav.css"
 const Nav = () => {
   return (
     <header>
-      <nav>
+      <nav className="nav">
         <img src="./images/logo.svg" alt="Logo"/>
-        <div>
-          <a class="nav-a" href="#">
+        <div className="nav-a-div">
+          <a className="nav-a" href="#">
             {" "}
             Products
           </a>
-          <a class="nav-a" href="#">
+          <a className="nav-a" href="#">
             {" "}
             Features
           </a>
-          <a class="nav-a" href="#">
+          <a className="nav-a" href="#">
             {" "}
             About
           </a>
-          <a class="nav-a" href="#">
+          <a className="nav-a" href="#">
             {" "}
             Contact
           </a>
-          <a class="nav-a" href="#">
+          <a className="nav-a login-nav" href="#">
             {" "}
             Login
                   </a>
-          <span>|</span>
+          <span className="nav-divider">|</span>
          
-          <Button buttonText={"Register"}/>
+          <Button  buttonText={"Register"}/>
         </div>
       </nav>
     </header>
