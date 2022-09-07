@@ -8,7 +8,36 @@
 }
 
 .save-div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+
+.save-p-70 {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 4px .8rem;
+    font-size: .8rem;
+    color: #0D0D2B
+}
+
+.save-p-div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: .5rem 0;
+    padding-right: .5rem;
+    display: flex;
+    width: 90%;
+    margin-top: 2rem;
+    max-width: 350px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.save-p-div p {
+    margin: 0;
+}
+
+.save-p-div p:nth-child(2) {
+    font-size: .85rem;
 }
 
 .trade-section {
