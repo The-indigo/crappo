@@ -39,7 +39,6 @@ const Nav = () => {
           color="white"
         />
         <div className={`nav-a-div ${navOpen?"open":null}`}>
-          
                   <FontAwesomeIcon
           onClick={openNav}
           className="close-icon"

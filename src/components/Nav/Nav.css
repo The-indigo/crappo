@@ -9,6 +9,8 @@ header {
 .hamburger-icon,
 .close-icon {
     visibility: hidden;
+    font-size: 1.4rem;
+
 }
 
 .nav {
@@ -52,7 +54,7 @@ header {
 
     .close-icon {
         position: absolute;
-        top: 1rem;
+        top: 2rem;
         right: 2rem;
     }
 
