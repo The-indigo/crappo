@@ -11,7 +11,7 @@ const Nav = () => {
   };
   useEffect(() => {
     let navDiv=document.getElementsByClassName("nav-a-div")[0]
-    if (window.innerWidth < 500) {
+    if (window.innerWidth < 1024) {
           navOpen == false
       ? (navDiv.style.visibility =
               "hidden")

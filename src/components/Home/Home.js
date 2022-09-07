@@ -5,14 +5,15 @@ const Home = () => {
   return (
     <main>
       
-        <div className="save-p-div">
+       
+
+
+      <div className="save-div">
+        <div className="fastest-div">
+           <div className="save-p-div">
           <p className="save-p-70">70% SAVE </p>
           <p>For the Black Friday weekend</p>
         </div>
-
-
-
-<div className="save-div">
         <h1>Fastest & Secure Platform To Invest In Crypto</h1>
         <p>
           Buy and sell cryptocurrencies by trusted 10M wallets, in over 100m
@@ -28,7 +29,9 @@ const Home = () => {
       </div>
       <div className="saveimg-div">
         <img src="./images/hero-img.png" />
-      </div>
+      </div>        
+</div>
+
 
       <section className="numbers-section">
         <div className="numbers-icons-div">

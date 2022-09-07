@@ -3,13 +3,16 @@
     color: #fff;
 }
 
+.fastest-div p:nth-child(3) {
+    font-size: .7rem;
+    width: 70%;
+}
+
 .features-section {
     background-color: #2B076E;
 }
 
-.save-div {
-    /* border: 2px solid red; */
-}
+
 
 .save-p-70 {
     background-color: #fff;
@@ -50,4 +53,26 @@
 .why-img-div img,
 .features-section-card-img-div img {
     width: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .fastest-div {
+        width: 588px
+    }
+
+    .save-div {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .save-div h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .saveimg-div {
+        /* width: 40%; */
+    }
 }
