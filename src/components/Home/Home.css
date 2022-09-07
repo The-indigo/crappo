@@ -3,9 +3,15 @@
     color: #fff;
 }
 
+.fastest-div h1 {
+    margin-bottom: .5rem;
+}
+
 .fastest-div p:nth-child(3) {
     font-size: .7rem;
     width: 70%;
+    font-weight: 100;
+    line-height: 2;
 }
 
 .features-section {
@@ -29,7 +35,7 @@
     display: flex;
     width: 90%;
     margin-top: 2rem;
-    max-width: 350px;
+    max-width: 280px;
     align-items: center;
     justify-content: space-between;
     border-radius: 1rem;
@@ -40,7 +46,10 @@
 }
 
 .save-p-div p:nth-child(2) {
-    font-size: .85rem;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 0.01em;
+    font-style: normal;
 }
 
 .trade-section {
@@ -57,7 +66,7 @@
 
 @media screen and (min-width:1024px) {
     .fastest-div {
-        width: 588px
+        width: 588px;
     }
 
     .save-div {
@@ -73,6 +82,17 @@
     }
 
     .saveimg-div {
-        /* width: 40%; */
+        /* width: 45%; */
+    }
+
+    /*********************** Numbers section****************************************/
+    .numbers-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .numbers-icons-div {
+        display: flex;
+        align-items: center;
     }
 }
