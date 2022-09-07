@@ -7,7 +7,18 @@
     background-color: #2B076E;
 }
 
+.save-div {
+    border: 2px solid red;
+}
+
 .trade-section {
     background-color: #FBFCFE;
     color: #0D0D2B;
+}
+
+
+.saveimg-div img,
+.why-img-div img,
+.features-section-card-img-div img {
+    width: 100%;
 }

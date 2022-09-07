@@ -129,7 +129,7 @@ const Home = () => {
             <Button />
           </div>
 
-          <div className="features-section-crad-img-div">
+          <div className="features-section-card-img-div">
             <img src="./images/feature-1-img.png" />
           </div>
         </div>
@@ -143,7 +143,7 @@ const Home = () => {
             </p>
             <Button />
           </div>
-          <div className="features-section-crad-img-div">
+          <div className="features-section-card-img-div">
             <img src="./images/feature-2-img.png" />
           </div>
         </div>
@@ -157,7 +157,7 @@ const Home = () => {
             </p>
             <Button />
           </div>
-          <div className="features-section-crad-img-div">
+          <div className="features-section-card-img-div">
             <img src="./images/feature-3-img.png" />
           </div>
         </div>
