@@ -6,6 +6,10 @@ header {
     margin-top: 1rem;
 }
 
+.hamburger-icon,
+.close-icon {
+    visibility: hidden;
+}
 
 .nav {
     display: flex;
@@ -41,9 +45,19 @@ header {
 }
 
 @media screen and (max-width:500px) {
+
+    .hamburger-icon {
+        visibility: visible;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
     .nav-a-div {
-        display: none;
-        /* background-color: #0D0D2B;
+        background-color: #0D0D2B;
         height: 100vh;
         position: absolute;
         right: 0;
@@ -51,7 +65,17 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%; */
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 500ms ease-in;
+    }
+
+    .open {
+        transform: translateX(0%);
+    }
+
+    .close {
+        transform: translateX(100%);
     }
 
     .nav-a {}
