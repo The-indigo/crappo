@@ -4,10 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <main>
-      
-       
-
-
+          <div className='App'>
       <div className="save-div">
         <div className="fastest-div">
            <div className="save-p-div">
@@ -88,28 +85,29 @@ const Home = () => {
           Exercitation veniam consequat sunt nostrud amet.
         </p>
       </section>
-
+</div>
       <section className="trade-section">
         <div></div>
+        
         <h4>Trade securely and market the high growth cryptocurrencies.</h4>
-        <div className="trade-securely-div">
+        <div className=" trade-securely-div">
           <div className="crypto-div crypto-blue-card">
             <img src="./images/bitcon.png" />
-            <div>
+            <div className="trade-currency">
               <h5>Bitcoin</h5>
               <p>BTC</p>
             </div>
-            <p>
+            <p className="trade-text-p">
               Digital currency in which a record of transactions is maintained.
             </p>
           </div>
           <div className="crypto-div crypto-white-card">
             <img src="./images/ethereum.png" />
-            <div>
+            <div className="trade-currency">
               <h5>Ethereum</h5>
               <p>ETH</p>
             </div>
-            <p>
+             <p className="trade-text-p">
               Blockchain technology to create and run decentralized digital
               applications.
             </p>
@@ -117,11 +115,11 @@ const Home = () => {
 
           <div className="crypto-div crypto-white-card">
             <img src="./images/litecoin.png" />
-            <div>
+           <div className="trade-currency">
               <h5>Litecoin</h5>
               <p>LTC</p>
             </div>
-            <p>
+            <p className="trade-text-p">
               Cryptocurrency that enables instant payments to anyone in the
               world.
             </p>

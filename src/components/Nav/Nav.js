@@ -30,6 +30,8 @@ const Nav = () => {
   }, [navOpen]);
   return (
     <header>
+          <div className='App'>
+
       <nav className="nav">
         <img src="./images/logo.svg" alt="Logo" />
         <FontAwesomeIcon
@@ -69,7 +71,9 @@ const Nav = () => {
             <Button buttonText={"Register"} />
           </div>
         </div>
-      </nav>
+        </nav>
+        </div>
+
     </header>
   );
 };
