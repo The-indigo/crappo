@@ -71,7 +71,7 @@ const Home = () => {
           <img src="./images/why-img.png" />
         </div>
 
-        <div>
+        <div className="why-choose">
           <h3>Why you should choose CRAPPO</h3>
           <p>
             Experience the next generation cryptocurrency platform. No financial

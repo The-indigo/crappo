@@ -111,11 +111,48 @@
     .numbers-figures-div p {
         margin-top: 0;
         font-size: .8rem;
-        font-weight: 200;
+        font-weight: 100;
     }
 
     .numbers-icons-div {
         display: flex;
         align-items: center;
     }
+
+
+    /*********************** Why section****************************************/
+    .why-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .why-choose {
+        margin-left: 3rem;
+        width: 50%;
+    }
+
+    .why-section h3 {
+        font-size: 2rem;
+        line-height: 150%;
+        width: 70%;
+        min-width: 400px;
+        margin-bottom: .5rem;
+    }
+
+    .why-img-div {
+        /* width: 48%; */
+    }
+
+    .why-choose p {
+        width: 56%;
+        margin-top: 0;
+        min-width: 310px;
+        font-weight: 100;
+        font-size: .8rem;
+        line-height: 28px;
+    }
+
 }
