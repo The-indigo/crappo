@@ -149,10 +149,33 @@
     .why-choose p {
         width: 56%;
         margin-top: 0;
+        margin-bottom: 2rem;
         min-width: 310px;
         font-weight: 100;
         font-size: .8rem;
         line-height: 28px;
+        color: #E0E0E0;
+    }
+
+    /*********************** Check section****************************************/
+    .check-section {
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .check-section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .check-section p {
+        font-size: .8rem;
+        font-weight: 100;
+        color: #E0E0E0;
+        max-width: 400px;
+        width: 43%;
+        line-height: 1.6;
+        margin: 0 auto;
     }
 
 }
