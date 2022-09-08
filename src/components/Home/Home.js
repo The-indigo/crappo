@@ -39,7 +39,7 @@ const Home = () => {
 <img src="./images/icon.png" alt="icon showing a graph" />
           </div>
           
-          <div>
+          <div className="numbers-figures-div">
             <h2>$30B</h2>
             <p>Digital Currency Exchanged</p>
           </div>
@@ -49,7 +49,7 @@ const Home = () => {
                     <div className="numbers-icons-image-div" >
           <img src="./images/icon2.png" alt="icon showing a faceless person" />
           </div>
-          <div>
+          <div className="numbers-figures-div">
             <h2>10M+</h2>
             <p>Trusted Wallets Investor</p>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
                         <div className="numbers-icons-image-div" >
           <img src="./images/icon1.png" alt="icon showing the world map" />
           </div>
-          <div>
+          <div className="numbers-figures-div">
             <h2>195</h2>
             <p>Countries Supported</p>
           </div>

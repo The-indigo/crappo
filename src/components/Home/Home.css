@@ -60,7 +60,8 @@
 
 .saveimg-div img,
 .why-img-div img,
-.features-section-card-img-div img {
+.features-section-card-img-div img,
+.numbers-icons-image-div img {
     width: 100%;
 }
 
@@ -70,10 +71,10 @@
     }
 
     .save-div {
-        margin-top: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 2rem;
     }
 
     .save-div h1 {
@@ -89,6 +90,28 @@
     .numbers-section {
         display: flex;
         justify-content: space-between;
+        margin-top: 8rem;
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .numbers-icons-image-div {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .numbers-figures-div {
+        margin-left: 1rem;
+    }
+
+    .numbers-figures-div h2 {
+        margin-bottom: 8px;
+    }
+
+    .numbers-figures-div p {
+        margin-top: 0;
+        font-size: .8rem;
+        font-weight: 200;
     }
 
     .numbers-icons-div {
