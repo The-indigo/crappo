@@ -194,6 +194,7 @@ const Home = () => {
       </section>
 
       <footer className="footer">
+        <div className="App footer-div">
         <div className="footer-logo-image">
           <img src="./images/logo.png" />
         </div>
@@ -215,9 +216,21 @@ const Home = () => {
           <a href="#">Interest</a>
         </div>
 
-        <div className="quick-link-div">
-          <h6>We accept following payment systems</h6>
-        </div>
+        <div className="quick-link-div footer-we-accept">
+            <h6>We accept following payment systems</h6>
+            <div className="footer-we-accept-logos-div">
+              <div className="footer-we-accept-logos">
+                <img src="./images/visa.png"/>
+              </div>
+                 <div className="footer-we-accept-logos">
+                <img src="./images/mastercard.png"/>
+              </div>
+                 <div className="footer-we-accept-logos">
+                <img src="./images/bitcoin.png"/>
+              </div>
+            </div>
+          </div>
+          </div>
       </footer>
     </main>
   );

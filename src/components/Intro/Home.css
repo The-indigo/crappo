@@ -83,12 +83,17 @@
 
 .startmining-input-div input::placeholder {
     color: #fff;
+    font-size: .7rem;
 }
 
 .startmining-section {
     background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
 }
 
+.quick-link-div a:hover {
+    cursor: pointer;
+    color: #2B076E;
+}
 
 @media screen and (min-width:1024px) {
     .fastest-div {
@@ -352,13 +357,69 @@
 
     .startmining-input-div {
         width: 50%;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
 
     .startmining-input-div input {
         width: 60%;
     }
 
+    /**********************************Footer section***********************************/
 
 
+    .footer-div {
+        display: flex;
+        /* align-items: baseline; */
+        justify-content: space-between;
+        padding: 4rem 0;
+
+    }
+
+    .quick-link-div {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .quick-link-div a {
+        font-weight: 100;
+        color: #E0E0E0;
+        font-size: .9rem;
+    }
+
+
+    .quick-link-div h6 {
+        margin-top: .5rem;
+        font-size: .9rem;
+        margin-bottom: 1.3rem;
+        mix-blend-mode: normal;
+        /* font-weight: normal; */
+    }
+
+    .footer-we-accept {
+        width: 40%;
+    }
+
+    .footer-we-accept h6 {
+        width: 75%;
+        margin-top: 0;
+        max-width: 300px;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .footer-we-accept-logos-div {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .footer-we-accept-logos {
+        border-radius: 3px;
+        width: 85px;
+        height: 60px;
+    }
+
+    .footer-we-accept-logos img {
+        width: 100%;
+    }
 }
