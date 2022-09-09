@@ -14,7 +14,8 @@
     line-height: 2;
 }
 
-.features-section {
+.features-section,
+.startmining-section {
     background-color: #2B076E;
 }
 
@@ -64,6 +65,30 @@
 .numbers-icons-image-div img {
     width: 100%;
 }
+
+.startmining-section-div {
+    margin-top: 3rem;
+}
+
+.startmining-input-div input {
+    border: none;
+    padding-left: 0;
+    padding-bottom: .3rem;
+    margin-top: .5rem;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+}
+
+.startmining-input-div input::placeholder {
+    color: #fff;
+}
+
+.startmining-section {
+    background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+}
+
 
 @media screen and (min-width:1024px) {
     .fastest-div {
@@ -183,6 +208,7 @@
 
     .trade-section {
         text-align: center;
+        padding-bottom: 4rem;
     }
 
     .trade-section h4 {
@@ -233,11 +259,32 @@
 
 
     /*********************** Features section****************************************/
+    /*******used to avoid the div from going down when set margin-top to the first element *******/
+    .features-section {
+        overflow: auto;
+    }
 
     .features-section-card {
         display: flex;
         justify-content: space-evenly;
         margin-top: 7rem;
+    }
+
+    .features-section-h5-div {
+        margin-top: 4rem;
+
+    }
+
+    .features-section h5 {
+        width: 65%;
+        margin: 0 auto;
+        max-width: 650px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 5rem;
+        line-height: 150%;
+
     }
 
     .features-section-card-reverse {
@@ -250,6 +297,7 @@
         max-width: 340px;
         /* min-width: 400px; */
     }
+
 
     .features-section-card-text-div h6 {
         font-weight: 700;
@@ -268,4 +316,49 @@
     .features-section-card-img-div {
         width: 40%;
     }
+
+    /***************************startmining section********************************/
+    .startmining-section {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .startmining-section-div {
+        background: #3671E9;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .startmining-text-div {
+        width: 40%;
+        max-width: 290px;
+    }
+
+    .startmining-text-div h6 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .startmining-text-div p {
+        font-size: .8rem;
+        font-weight: 100;
+    }
+
+    .startmining-input-div {
+        width: 50%;
+        border: 2px solid blue;
+    }
+
+    .startmining-input-div input {
+        width: 60%;
+    }
+
+
+
 }

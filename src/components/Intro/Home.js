@@ -128,9 +128,10 @@ const Home = () => {
       </section>
 
       <section className="features-section">
-        <h5>
+       <h5>
           Market sentiments,portfolio, and run the infrastructure of your choice
         </h5>
+ 
 
         <div className="features-section-card">
         <div className="features-section-card-text-div">
@@ -175,7 +176,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
       <section className="startmining-section">
+        <div className="startmining-section-div">
         <div className="startmining-text-div">
           <h6>Start mining now</h6>
           <p>
@@ -183,9 +187,10 @@ const Home = () => {
           </p>
         </div>
         <div className="startmining-input-div">
-          <input type={"text"} />
+          <input type={"text"} placeholder="Enter your email" />
           <Button buttonText={"Subscribe"} />
-        </div>
+          </div>
+          </div>
       </section>
 
       <footer className="footer">
