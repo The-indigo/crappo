@@ -366,12 +366,14 @@
 
     /**********************************Footer section***********************************/
 
+    .footer {
+        padding-bottom: 3rem;
+    }
 
     .footer-div {
         display: flex;
-        /* align-items: baseline; */
         justify-content: space-between;
-        padding: 4rem 0;
+        padding-top: 4rem;
 
     }
 
@@ -421,5 +423,21 @@
 
     .footer-we-accept-logos img {
         width: 100%;
+    }
+
+    .footer-allrights-div {
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        justify-content: space-between;
+    }
+
+    .footer-allrights-div p {
+        font-size: .8rem;
+        font-weight: 100;
+    }
+
+    .footer-font+.footer-font {
+        margin-left: 1rem;
     }
 }

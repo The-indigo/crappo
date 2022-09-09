@@ -1,5 +1,8 @@
 import Button from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars, faX } from 
 import "./Home.css";
+import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -229,6 +232,17 @@ const Home = () => {
                 <img src="./images/bitcoin.png"/>
               </div>
             </div>
+          </div>
+
+        </div>
+        <div className="footer-allrights-div App">
+          <p>2022 CRAPPO. All rights reserved</p>
+          <div>
+            <FontAwesomeIcon className="footer-font" icon={faFacebookF}/>
+            <FontAwesomeIcon className="footer-font" icon={faInstagram} />
+            <FontAwesomeIcon className="footer-font" icon={faYoutube} />
+            <FontAwesomeIcon className="footer-font" icon={faTwitter} />
+            <FontAwesomeIcon className="footer-font" icon={faLinkedin}/>
           </div>
           </div>
       </footer>
