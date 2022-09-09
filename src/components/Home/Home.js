@@ -133,7 +133,7 @@ const Home = () => {
         </h5>
 
         <div className="features-section-card">
-          <div>
+        <div className="features-section-card-text-div">
             <h6>Invest Smart</h6>
             <p>
               Get full statistic information about the behaviour of buyers and
@@ -147,8 +147,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="features-section-card">
-          <div>
+        <div className="features-section-card features-section-card-reverse">
+          <div className="features-section-card-text-div">
             <h6>Detailed Statistics</h6>
             <p>
               View all mining related information in realtime, at any point at
@@ -162,7 +162,7 @@ const Home = () => {
         </div>
 
         <div className="features-section-card">
-          <div>
+          <div className="features-section-card-text-div">
             <h6>Grow your profit and track your investments</h6>
             <p>
               Use advanced analytical tools. Clear TradingView charts let you
