@@ -90,10 +90,6 @@
 }
 
 
-.startmining-input-div input {
-    margin-top: .5rem;
-}
-
 .startmining-input-div input::placeholder {
     color: #fff;
     font-size: .7rem;
@@ -101,6 +97,20 @@
 
 .startmining-section {
     background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+}
+
+.trade-section-hash-rate-dropdown {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: transparent;
+}
+
+.trade-section-hash-rate-dropdown p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .quick-link-div a:hover {
@@ -245,10 +255,19 @@
         margin: 0 auto;
     } */
 
+    .trade-section-hash-rate-dropdown {
+        width: 20%;
+    }
+
     .trade-section-hash-rate-form {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin-bottom: 3rem;
+    }
+
+    .trade-section-hash-rate-form input {
+        width: 40%;
     }
 
     .trade-section-hash-rate-estimated {
@@ -433,7 +452,9 @@
 
     .startmining-input-div {
         width: 50%;
-        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .startmining-input-div input {

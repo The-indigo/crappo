@@ -95,8 +95,8 @@ const Home = () => {
           <div className="trade-section-hash-container">
           <div className="trade-section-hash-rate-form">
             <input type={"text"} placeholder="Enter your hash rate" />
-            <div>
-              <input type={"text"} placeholder="TH/s"/>
+            <div className="trade-section-hash-rate-dropdown">
+              <p>TH/s</p>
               <FontAwesomeIcon icon={faCaretDown} />
             </div>
             <Button buttonText={"Calculate"}/>
@@ -208,7 +208,7 @@ const Home = () => {
         </div>
         <div className="startmining-input-div">
           <input type={"text"} placeholder="Enter your email" />
-          <Button buttonText={"Subscribe"} />
+          <Button buttonText={"Subscribe"} white />
           </div>
           </div>
       </section>
