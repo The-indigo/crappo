@@ -2,7 +2,8 @@ import Button from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars, faX } from 
 import "./Home.css";
-import { faFacebook, faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -90,7 +91,23 @@ const Home = () => {
       </section>
 </div>
       <section className="trade-section">
-        <div></div>
+        <div className="trade-section-hash-rate-div">
+          <div className="trade-section-hash-container">
+          <div className="trade-section-hash-rate-form">
+            <input type={"text"} placeholder="Enter your hash rate" />
+            <div>
+              <input type={"text"} placeholder="TH/s" />
+              <FontAwesomeIcon icon={faCaretDown} />
+            </div>
+            <Button buttonText={"Calculate"}/>
+          </div>
+          <div>
+            <p>Estimated 24 Hour revenue</p>
+            <p>0.055 130 59 ETH <span>($1275)</span></p>
+            <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+          </div>
+          </div>
+        </div>
         
         <h4>Trade securely and market the high growth cryptocurrencies.</h4>
         <div className=" trade-securely-div">
