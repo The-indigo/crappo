@@ -113,6 +113,19 @@
     margin-top: 0;
 }
 
+.trade-text-circlebutton {
+    border: 2px solid rgba(43, 7, 110, 0.2);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 50%
+}
+
 .quick-link-div a:hover {
     cursor: pointer;
     color: #2B076E;
@@ -343,6 +356,8 @@
         line-height: 1.8;
         letter-spacing: 0.01em;
     }
+
+
 
     .crypto-div img {
         width: 3rem;

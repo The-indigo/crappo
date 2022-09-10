@@ -1,8 +1,7 @@
 import Button from "../Button/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBars, faX } from 
 import "./Home.css";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
@@ -20,7 +19,8 @@ const Home = () => {
           Buy and sell cryptocurrencies by trusted 10M wallets, in over 100m
           transactions
         </p>
-        <Button
+            <Button
+              font
           buttonText={
             <>
               Try For Free<span></span>
@@ -120,6 +120,9 @@ const Home = () => {
             <p className="trade-text-p">
               Digital currency in which a record of transactions is maintained.
             </p>
+            <div className="">
+              <Button buttonText={"Start mining"} />
+            </div>
           </div>
           <div className="crypto-div crypto-white-card">
             <img src="./images/ethereum.png" />
@@ -131,6 +134,9 @@ const Home = () => {
               Blockchain technology to create and run decentralized digital
               applications.
             </p>
+            <div className="trade-text-circlebutton">
+              <FontAwesomeIcon icon={faChevronRight} color="blue"/>
+              </div>
           </div>
 
           <div className="crypto-div crypto-white-card">
@@ -143,6 +149,9 @@ const Home = () => {
               Cryptocurrency that enables instant payments to anyone in the
               world.
             </p>
+                 <div className="trade-text-circlebutton">
+              <FontAwesomeIcon icon={faChevronRight} color="blue"/>
+              </div>
           </div>
         </div>
       </section>
