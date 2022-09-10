@@ -81,6 +81,11 @@
     outline: none;
 }
 
+.trade-section-hash-rate-form input {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+
 .startmining-input-div input {
     margin-top: .5rem;
 }
@@ -194,7 +199,9 @@
     /*********************** Check section****************************************/
     .check-section {
         text-align: center;
-        margin-top: 10rem;
+        margin-top: 12rem;
+        padding-bottom: 10rem;
+        position: relative;
     }
 
     .check-section h3 {
@@ -214,27 +221,70 @@
 
     /*********************** Trade section****************************************/
 
-
     .trade-section-hash-rate-div {
         background-color: #fff;
-        width: 70%;
-        box-shadow: 1px 1px grey;
-        margin: 0 auto;
+        padding: 3rem 2rem 2rem 2rem;
+        /* padding-bottom: 2rem; */
+        width: 60%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 8px;
+        position: absolute;
+        top: -6rem;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
-    .trade-section-hash-container {
+    /* .trade-section-hash-container {
         border: 2px solid yellow;
-        width: 90%;
+        width: 90%; 
         margin: 0 auto;
-    }
+    } */
 
     .trade-section-hash-rate-form {
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    .trade-section-hash-rate-estimated {
+        text-align: start;
+        margin-top: 2rem;
+    }
+
+    .trade-section-estimated-hour {
+        color: #3671E9;
+        font-size: .9rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .trade-section-estimated-eth {
+        color: #0D0D2B;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+
+    }
+
+    .trade-section-estimated-eth span {
+        color: #3671E9;
+    }
+
+    .trade-section-estimated-revenue {
+        font-weight: 100;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+        color: #828282;
+        margin-top: 0;
     }
 
     .trade-section {
         text-align: center;
         padding-bottom: 4rem;
+        position: relative;
+        padding-top: 16rem;
     }
 
     .trade-section h4 {
@@ -335,6 +385,7 @@
     .features-section-card-text-div p {
         font-size: .8rem;
         font-weight: 100;
+        line-height: 28px;
         color: #E0E0E0;
         margin-bottom: 2rem;
     }

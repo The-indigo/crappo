@@ -96,15 +96,15 @@ const Home = () => {
           <div className="trade-section-hash-rate-form">
             <input type={"text"} placeholder="Enter your hash rate" />
             <div>
-              <input type={"text"} placeholder="TH/s" />
+              <input type={"text"} placeholder="TH/s"/>
               <FontAwesomeIcon icon={faCaretDown} />
             </div>
             <Button buttonText={"Calculate"}/>
           </div>
-          <div>
-            <p>Estimated 24 Hour revenue</p>
-            <p>0.055 130 59 ETH <span>($1275)</span></p>
-            <p>Revenue will change based on mining difficulty and Ethereum price.</p>
+          <div className="trade-section-hash-rate-estimated">
+            <p className="trade-section-estimated-hour">Estimated 24 Hour revenue:</p>
+            <p className="trade-section-estimated-eth">0.055 130 59 ETH <span>($1275)</span></p>
+            <p className="trade-section-estimated-revenue">Revenue will change based on mining difficulty and Ethereum price.</p>
           </div>
           </div>
         </div>
