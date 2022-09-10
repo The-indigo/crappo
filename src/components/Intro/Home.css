@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+.crypto-white-card {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 .fastest-div h1 {
     margin-bottom: .5rem;
 }
