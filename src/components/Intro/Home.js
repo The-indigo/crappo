@@ -66,8 +66,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+</div>
+        <section className="why-section">
+          <div className="why-section-container App">
 
-      <section className="why-section">
+          
         <div className="why-img-div">
           <img src="./images/why-img.png" />
         </div>
@@ -79,7 +82,8 @@ const Home = () => {
             borders, extra fees, and fake reviews.
           </p>
           <Button buttonText={"Learn More"} />
-        </div>
+            </div>
+            </div>
       </section>
 
       <section className="check-section">
@@ -89,7 +93,7 @@ const Home = () => {
           Exercitation veniam consequat sunt nostrud amet.
         </p>
       </section>
-</div>
+
       <section className="trade-section">
         <div className="trade-section-hash-rate-div">
           <div className="trade-section-hash-container">
@@ -120,8 +124,8 @@ const Home = () => {
             <p className="trade-text-p">
               Digital currency in which a record of transactions is maintained.
             </p>
-            <div className="">
-              <Button buttonText={"Start mining"} />
+            <div className="trade-startmining-button-div trade-text-button">
+              <Button buttonText={"Start mining"} font />
             </div>
           </div>
           <div className="crypto-div crypto-white-card">
@@ -134,7 +138,7 @@ const Home = () => {
               Blockchain technology to create and run decentralized digital
               applications.
             </p>
-            <div className="trade-text-circlebutton">
+            <div className="trade-text-circlebutton trade-text-button">
               <FontAwesomeIcon icon={faChevronRight} color="blue"/>
               </div>
           </div>
@@ -149,7 +153,7 @@ const Home = () => {
               Cryptocurrency that enables instant payments to anyone in the
               world.
             </p>
-                 <div className="trade-text-circlebutton">
+                 <div className="trade-text-circlebutton trade-text-button">
               <FontAwesomeIcon icon={faChevronRight} color="blue"/>
               </div>
           </div>
@@ -157,10 +161,11 @@ const Home = () => {
       </section>
 
       <section className="features-section">
+        <div className="features-section-h5-div">
        <h5>
           Market sentiments,portfolio, and run the infrastructure of your choice
         </h5>
- 
+  </div>
 
         <div className="features-section-card">
         <div className="features-section-card-text-div">
@@ -191,7 +196,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="features-section-card">
+        <div className="features-section-card feaatures-section-card-reverse-div">
           <div className="features-section-card-text-div">
             <h6>Grow your profit and track your investments</h6>
             <p>
@@ -200,7 +205,7 @@ const Home = () => {
             </p>
             <Button />
           </div>
-          <div className="features-section-card-img-div">
+          <div className="features-section-card-img-div" >
             <img src="./images/feature-3-img.png" />
           </div>
         </div>

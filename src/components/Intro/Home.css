@@ -3,8 +3,20 @@
     color: #fff;
 }
 
+.crypto-div img {
+    width: 3rem;
+    height: 3rem;
+}
+
 .crypto-white-card {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.crypto-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
 }
 
 .fastest-div h1 {
@@ -18,11 +30,18 @@
     line-height: 2;
 }
 
+
 .features-section,
 .startmining-section {
     background-color: #2B076E;
 }
 
+.feaatures-section-card-reverse-div {
+    background-image: url("../../../public/images/features-circle-2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22%;
+}
 
 
 .save-p-70 {
@@ -57,11 +76,32 @@
     font-style: normal;
 }
 
+.trade-currency {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
 .trade-section {
     background-color: #FBFCFE;
     color: #0D0D2B;
 }
 
+.trade-text-button {
+    margin-top: 1rem;
+}
+
+.trade-text-circlebutton {
+    border: 2px solid rgba(43, 7, 110, 0.2);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+    border-radius: 50%
+}
 
 .saveimg-div img,
 .why-img-div img,
@@ -113,18 +153,11 @@
     margin-top: 0;
 }
 
-.trade-text-circlebutton {
-    border: 2px solid rgba(43, 7, 110, 0.2);
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1.3rem;
-    margin-top: 1rem;
-    border-radius: 50%
+.trade-startmining-button-div {
+    /* margin-top: 1.3rem; */
 }
+
+
 
 .quick-link-div a:hover {
     cursor: pointer;
@@ -188,10 +221,14 @@
 
     /*********************** Why section****************************************/
     .why-section {
+        background: url("../../../public/images/why-model-1.png") right top no-repeat,
+            url("../../../public/images/why-model-2.png") right bottom no-repeat;
+    }
+
+    .why-section-container {
         display: flex;
         align-items: center;
-        margin-top: 10rem;
-        width: 95%;
+        padding-top: 5rem;
         justify-content: space-between;
     }
 
@@ -359,17 +396,6 @@
 
 
 
-    .crypto-div img {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .trade-currency {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: .4rem;
-    }
 
 
     /*********************** Features section****************************************/
@@ -386,17 +412,24 @@
 
     .features-section-h5-div {
         margin-top: 4rem;
+        border: 2px solid red;
+        background-repeat: no-repeat;
+
+        /* background-size: 60%; */
+        background-image: url("../../../public/images/features-circle-1.png");
+        width: 65%;
+        /* background-position: TO; */
+        margin: 0 auto;
+        /* background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.16) 0deg, rgba(255, 255, 255, 0) 360deg); */
+        /* transform: rotate(90deg); */
+        max-width: 650px;
 
     }
 
     .features-section h5 {
-        width: 65%;
-        margin: 0 auto;
-        max-width: 650px;
         font-weight: 700;
         text-align: center;
         font-size: 2rem;
-        margin-top: 5rem;
         line-height: 150%;
 
     }
@@ -435,11 +468,15 @@
     /***************************startmining section********************************/
     .startmining-section {
         padding-top: 6rem;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
+        background-image: url("../../../public/images/newsletter-bg.png");
+
+
     }
 
     .startmining-section-div {
-        background: #3671E9;
+        /* background: #3671E9; */
+        background-image: url("../../../public/images/newsletter-box.png");
         border-radius: 10px;
         width: 80%;
         margin: 0 auto;
