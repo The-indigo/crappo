@@ -75,6 +75,7 @@
 
 .numbers-icons-div {
     display: flex;
+    margin-bottom: 1.4rem;
     align-items: center;
 }
 
@@ -111,11 +112,26 @@
     font-style: normal;
 }
 
+.numbers-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.why-section {
+    background: url("../../../public/images/why-model-1.png") right top no-repeat,
+        url("../../../public/images/why-model-2.png") right bottom no-repeat;
+}
+
 .why-section-container {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 2rem;
+    padding-top: 5rem;
 }
+
 
 .check-section {
     text-align: center;
@@ -222,7 +238,6 @@
 }
 
 .trade-section {
-    border: 2px solid yellow;
     text-align: center;
     padding-bottom: 4rem;
     position: relative;
@@ -369,18 +384,74 @@
 }
 
 
+
+
+.footer {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.footer-div {
+    padding-top: 4rem;
+}
+
 .quick-link-div a:hover {
     cursor: pointer;
     color: #2B076E;
 }
 
+.quick-link-div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-direction: column;
 
-.footer {
-    padding-bottom: 3rem;
 }
 
-.footer-div {
-    padding-top: 4rem;
+.quick-link-div a {
+    font-weight: 100;
+    color: #E0E0E0;
+    font-size: .9rem;
+}
+
+
+.quick-link-div h6 {
+    margin-top: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+    mix-blend-mode: normal;
+}
+
+.footer-we-accept h6 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer-we-accept-logos-div {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-we-accept-logos {
+    border-radius: 3px;
+    width: 85px;
+    height: 60px;
+}
+
+.footer-we-accept-logos img {
+    width: 100%;
+}
+
+.footer-allrights-div p {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.footer-fontawesome+.footer-fontawesome {
+    margin-left: 1.5rem;
+    margin-top: .7rem;
 }
 
 @media screen and (min-width:1024px) {
@@ -410,9 +481,10 @@
     /*********************** Numbers section****************************************/
     .numbers-section {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        margin-top: 8rem;
         width: 90%;
+        margin-top: 8rem;
         max-width: 1000px;
     }
 
@@ -426,7 +498,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-top: 5rem;
         justify-content: space-between;
     }
 
@@ -613,52 +684,22 @@
         justify-content: space-between;
     }
 
-    .quick-link-div {
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-    }
-
-    .quick-link-div a {
-        font-weight: 100;
-        color: #E0E0E0;
-        font-size: .9rem;
-    }
-
-
-    .quick-link-div h6 {
-        margin-top: .5rem;
-        font-size: .9rem;
-        margin-bottom: 1.3rem;
-        mix-blend-mode: normal;
-        /* font-weight: normal; */
-    }
-
     .footer-we-accept {
         width: 40%;
     }
 
+    .quick-link-div {
+        margin-top: 0
+    }
+
     .footer-we-accept h6 {
         width: 75%;
-        margin-top: 0;
         max-width: 300px;
         font-size: 1.6rem;
-        font-weight: 400;
     }
 
     .footer-we-accept-logos-div {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .footer-we-accept-logos {
-        border-radius: 3px;
-        width: 85px;
-        height: 60px;
-    }
-
-    .footer-we-accept-logos img {
-        width: 100%;
+        justify-content: flex-start;
     }
 
     .footer-allrights-div {
@@ -668,12 +709,7 @@
         justify-content: space-between;
     }
 
-    .footer-allrights-div p {
-        font-size: .8rem;
-        font-weight: 100;
-    }
-
-    .footer-font+.footer-font {
-        margin-left: 1.5rem;
+    .footer-fontawesome+.footer-fontawesome {
+        margin-top: 0;
     }
 }

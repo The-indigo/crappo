@@ -269,11 +269,11 @@ const Home = () => {
         <div className="footer-allrights-div App">
           <p>2022 CRAPPO. All rights reserved</p>
           <div>
-            <FontAwesomeIcon className="footer-font" icon={faFacebookF}/>
-            <FontAwesomeIcon className="footer-font" icon={faInstagram} />
-            <FontAwesomeIcon className="footer-font" icon={faYoutube} />
-            <FontAwesomeIcon className="footer-font" icon={faTwitter} />
-            <FontAwesomeIcon className="footer-font" icon={faLinkedin}/>
+            <FontAwesomeIcon className="footer-fontawesome" icon={faFacebookF}/>
+            <FontAwesomeIcon className="footer-fontawesome" icon={faInstagram} />
+            <FontAwesomeIcon className="footer-fontawesome" icon={faYoutube} />
+            <FontAwesomeIcon className="footer-fontawesome" icon={faTwitter} />
+            <FontAwesomeIcon className="footer-fontawesome" icon={faLinkedin}/>
           </div>
           </div>
       </footer>
