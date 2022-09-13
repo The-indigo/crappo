@@ -226,7 +226,6 @@
 .trade-section-hash-rate-div {
     background-color: #fff;
     padding: 3rem 2rem 2rem 2rem;
-    /* padding-bottom: 2rem; */
     width: 90%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 8px;
@@ -606,9 +605,8 @@
     }
 
     .features-section-h5-div {
-        border: 2px solid red;
         background-repeat: no-repeat;
-        background-image: url("../../../public/images/features-circle-1.png");
+        /* background-image: url("../../../public/images/features-circle-1.png"); */
         width: 65%;
         max-width: 650px;
     }
