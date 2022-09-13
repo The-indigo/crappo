@@ -53,7 +53,8 @@ const Home = () => {
       <section className="numbers-section">
         <div className="numbers-icons-div">
           <div className="numbers-icons-image-div" >
-<img src="./images/icon.png" alt="icon showing a graph" />
+              {/* <img src="./images/icon.png" alt="icon showing a graph" /> */}
+              <img src="./images/bitcon.png" />
           </div>
           
           <div className="numbers-figures-div">
@@ -64,7 +65,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                     <div className="numbers-icons-image-div" >
-          <img src="./images/icon2.png" alt="icon showing a faceless person" />
+          <img src="./images/licon2.png" alt="icon showing a faceless person" />
           </div>
           <div className="numbers-figures-div">
             <h2>10M+</h2>
@@ -74,7 +75,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                         <div className="numbers-icons-image-div" >
-          <img src="./images/icon1.png" alt="icon showing the world map" />
+          <img src="./images/licon1.png" alt="icon showing the world map" />
           </div>
           <div className="numbers-figures-div">
             <h2>195</h2>
@@ -246,7 +247,7 @@ const Home = () => {
       <footer className="footer">
         <div className="App footer-div">
         <div className="footer-logo-image">
-          <img src="./images/logo.png" />
+          <img src="./images/flogo.png" />
         </div>
         <div className="quick-link-div">
           <h6>Quick Link</h6>
