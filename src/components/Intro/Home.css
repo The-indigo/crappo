@@ -16,7 +16,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.crypto-div p {
+    font-size: .8rem;
+    font-weight: 100;
+
 }
 
 .fastest-div h1 {
@@ -41,6 +52,30 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: 22%;
+}
+
+.numbers-icons-image-div {
+    width: 4rem;
+    height: 4rem;
+}
+
+.numbers-figures-div {
+    margin-left: 1rem;
+}
+
+.numbers-figures-div h2 {
+    margin-bottom: 8px;
+}
+
+.numbers-figures-div p {
+    margin-top: 0;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.numbers-icons-div {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -74,6 +109,29 @@
     font-weight: 200;
     letter-spacing: 0.01em;
     font-style: normal;
+}
+
+.why-section-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+}
+
+.check-section {
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.check-section p {
+    font-size: .8rem;
+    font-weight: 100;
+    color: #E0E0E0;
+    max-width: 400px;
+    width: 75%;
+    line-height: 1.6;
+    margin: 0 auto;
 }
 
 .trade-currency {
@@ -129,6 +187,11 @@
     border-bottom: 1px solid #E0E0E0;
 }
 
+.trade-section-hash-rate-estimated {
+    text-align: start;
+    margin-top: 2rem;
+}
+
 
 .startmining-input-div input::placeholder {
     color: #fff;
@@ -137,6 +200,33 @@
 
 .startmining-section {
     background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+}
+
+.check-section {
+    padding-bottom: 13rem;
+}
+
+
+.trade-section-hash-rate-div {
+    background-color: #fff;
+    padding: 3rem 2rem 2rem 2rem;
+    /* padding-bottom: 2rem; */
+    width: 90%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+    position: absolute;
+    top: -11rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.trade-section {
+    border: 2px solid yellow;
+    text-align: center;
+    padding-bottom: 4rem;
+    position: relative;
+    padding-top: 16rem;
 }
 
 .trade-section-hash-rate-dropdown {
@@ -153,15 +243,144 @@
     margin-top: 0;
 }
 
+.trade-section-estimated-hour {
+    color: #3671E9;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.trade-section-estimated-eth {
+    color: #0D0D2B;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.trade-section-estimated-eth span {
+    color: #3671E9;
+}
+
+
+.trade-section-estimated-revenue {
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    color: #828282;
+    margin-top: 0;
+}
+
+.trade-section h4 {
+    font-size: 1.3rem;
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
+}
+
 .trade-startmining-button-div {
     /* margin-top: 1.3rem; */
 }
 
+.features-section {
+    overflow: auto;
+}
+
+.features-section-card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+.features-section-h5-div {
+    margin-top: 4rem;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.features-section h5 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 150%;
+}
+
+.features-section-card-text-div h6 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.features-section-card-text-div p {
+    font-size: .8rem;
+    font-weight: 100;
+    line-height: 22px;
+    color: #E0E0E0;
+}
+
+.features-section-card-text-div {
+    margin-bottom: 1rem;
+}
+
+.startmining-section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-image: url("../../../public/images/newsletter-bg.png");
+}
+
+.startmining-section-div {
+    background:
+        url("../../../public/images/newsletter-left.png")left no-repeat,
+        url("../../../public/images/bitcoin-bg.png") bottom -20px right 40px no-repeat;
+    background-color: #3671E9;
+    background-size: auto, 90px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+.startmining-text-div h6 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.startmining-text-div p {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.startmining-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.startmining-input-div input {
+    width: 100%;
+}
 
 
 .quick-link-div a:hover {
     cursor: pointer;
     color: #2B076E;
+}
+
+
+.footer {
+    padding-bottom: 3rem;
+}
+
+.footer-div {
+    padding-top: 4rem;
 }
 
 @media screen and (min-width:1024px) {
@@ -197,31 +416,6 @@
         max-width: 1000px;
     }
 
-    .numbers-icons-image-div {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .numbers-figures-div {
-        margin-left: 1rem;
-    }
-
-    .numbers-figures-div h2 {
-        margin-bottom: 8px;
-    }
-
-    .numbers-figures-div p {
-        margin-top: 0;
-        font-size: .8rem;
-        font-weight: 100;
-    }
-
-    .numbers-icons-div {
-        display: flex;
-        align-items: center;
-    }
-
-
     /*********************** Why section****************************************/
     .why-section {
         background: url("../../../public/images/why-model-1.png") right top no-repeat,
@@ -230,6 +424,7 @@
 
     .why-section-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding-top: 5rem;
         justify-content: space-between;
@@ -265,10 +460,8 @@
 
     /*********************** Check section****************************************/
     .check-section {
-        text-align: center;
         margin-top: 12rem;
         padding-bottom: 10rem;
-        position: relative;
     }
 
     .check-section h3 {
@@ -276,37 +469,11 @@
         margin-bottom: 1rem;
     }
 
-    .check-section p {
-        font-size: .8rem;
-        font-weight: 100;
-        color: #E0E0E0;
-        max-width: 400px;
-        width: 43%;
-        line-height: 1.6;
-        margin: 0 auto;
-    }
-
     /*********************** Trade section****************************************/
-
     .trade-section-hash-rate-div {
-        background-color: #fff;
-        padding: 3rem 2rem 2rem 2rem;
-        /* padding-bottom: 2rem; */
         width: 60%;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-        border-radius: 8px;
-        position: absolute;
         top: -6rem;
-        left: 0;
-        right: 0;
-        margin: auto;
     }
-
-    /* .trade-section-hash-container {
-        border: 2px solid yellow;
-        width: 90%; 
-        margin: 0 auto;
-    } */
 
     .trade-section-hash-rate-dropdown {
         width: 20%;
@@ -323,44 +490,8 @@
         width: 40%;
     }
 
-    .trade-section-hash-rate-estimated {
-        text-align: start;
-        margin-top: 2rem;
-    }
-
-    .trade-section-estimated-hour {
-        color: #3671E9;
-        font-size: .9rem;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
     .trade-section-estimated-eth {
-        color: #0D0D2B;
         font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-weight: 700;
-
-    }
-
-    .trade-section-estimated-eth span {
-        color: #3671E9;
-    }
-
-    .trade-section-estimated-revenue {
-        font-weight: 100;
-        font-size: 1rem;
-        letter-spacing: 0.01em;
-        color: #828282;
-        margin-top: 0;
-    }
-
-    .trade-section {
-        text-align: center;
-        padding-bottom: 4rem;
-        position: relative;
-        padding-top: 16rem;
     }
 
     .trade-section h4 {
@@ -378,16 +509,9 @@
     }
 
     .crypto-div {
-        padding: 3rem 0;
-        border-radius: 10px;
         width: 30%;
-        max-width: 300px;
-    }
-
-    .crypto-div p {
-        font-size: .8rem;
-        font-weight: 100;
-
+        margin-top: 0;
+        max-width: 400px;
     }
 
     .trade-text-p {
@@ -403,9 +527,6 @@
 
     /*********************** Features section****************************************/
     /*******used to avoid the div from going down when set margin-top to the first element *******/
-    .features-section {
-        overflow: auto;
-    }
 
     .features-section-card {
         display: flex;
@@ -414,27 +535,16 @@
     }
 
     .features-section-h5-div {
-        margin-top: 4rem;
         border: 2px solid red;
         background-repeat: no-repeat;
-
-        /* background-size: 60%; */
         background-image: url("../../../public/images/features-circle-1.png");
         width: 65%;
-        /* background-position: TO; */
-        margin: 0 auto;
-        /* background: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0.16) 0deg, rgba(255, 255, 255, 0) 360deg); */
-        /* transform: rotate(90deg); */
         max-width: 650px;
-
     }
 
-    .features-section h5 {
-        font-weight: 700;
-        text-align: center;
-        font-size: 2rem;
-        line-height: 150%;
 
+    .features-section h5 {
+        font-size: 2rem;
     }
 
     .features-section-card-reverse {
@@ -457,10 +567,7 @@
     }
 
     .features-section-card-text-div p {
-        font-size: .8rem;
-        font-weight: 100;
         line-height: 28px;
-        color: #E0E0E0;
         margin-bottom: 2rem;
     }
 
@@ -471,19 +578,11 @@
     /***************************startmining section********************************/
     .startmining-section {
         padding-top: 6rem;
-        padding-bottom: 5rem;
-        background-image: url("../../../public/images/newsletter-bg.png");
     }
 
     .startmining-section-div {
-        background:
-            url("../../../public/images/newsletter-left.png")left no-repeat,
-            url("../../../public/images/bitcoin-bg.png") bottom -20px right 40px no-repeat;
-        background-color: #3671E9;
         background-size: auto, 100px;
-        border-radius: 10px;
         width: 80%;
-        margin: 0 auto;
         justify-content: space-evenly;
         padding: 2rem 0;
         display: flex;
@@ -495,20 +594,10 @@
         max-width: 290px;
     }
 
-    .startmining-text-div h6 {
-        font-size: 1.5rem;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .startmining-text-div p {
-        font-size: .8rem;
-        font-weight: 100;
-    }
-
     .startmining-input-div {
         width: 50%;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -519,15 +608,9 @@
 
     /**********************************Footer section***********************************/
 
-    .footer {
-        padding-bottom: 3rem;
-    }
-
     .footer-div {
         display: flex;
         justify-content: space-between;
-        padding-top: 4rem;
-
     }
 
     .quick-link-div {
