@@ -10,15 +10,15 @@ const Home = () => {
   const element = useRef();
   const q = gsap.utils.selector(element);
 
-  useLayoutEffect(() => {
-    gsap.to(q(".fastest-div"), {
-        autoAlpha:0,
-      stagger: 2,
-      repeat: -1,
-      repeatDelay: 1,
-      yoyo: true
-    },)
-  })
+  // useLayoutEffect(() => {
+  //   gsap.to(q(".fastest-div"), {
+  //       autoAlpha:0,
+  //     stagger: 2,
+  //     repeat: -1,
+  //     repeatDelay: 1,
+  //     yoyo: true
+  //   },)
+  // })
 
 
   return (
@@ -53,7 +53,7 @@ const Home = () => {
       <section className="numbers-section">
         <div className="numbers-icons-div">
           <div className="numbers-icons-image-div" >
-<img src="./images/icon.png"  />
+<img src="./images/icon.png" alt="icon showing a graph" />
           </div>
           
           <div className="numbers-figures-div">
@@ -64,7 +64,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                     <div className="numbers-icons-image-div" >
-          <img src="./images/icon2.png"  />
+          <img src="./images/icon2.png" alt="icon showing a faceless person" />
           </div>
           <div className="numbers-figures-div">
             <h2>10M+</h2>
@@ -74,7 +74,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                         <div className="numbers-icons-image-div" >
-          <img src="./images/icon1.png"  />
+          <img src="./images/icon1.png" alt="icon showing the world map" />
           </div>
           <div className="numbers-figures-div">
             <h2>195</h2>
