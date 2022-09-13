@@ -1,7 +1,12 @@
+input {
+    font-size: 100%;
+}
+
 .crypto-blue-card {
     background-color: #2B076E;
     color: #fff;
 }
+
 
 .crypto-div img {
     width: 3rem;

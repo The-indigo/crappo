@@ -3,6 +3,9 @@ import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import { useLayoutEffect } from "react";
+
+
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -28,10 +31,12 @@ const Nav = () => {
     }
 
   }, [navOpen]);
-  return (
-    <header>
-          <div className='App'>
 
+  return (
+    
+    <header>
+   
+          <div className='App'>
       <nav className="nav">
         <img src="./images/logo.svg" alt="Logo" />
         <FontAwesomeIcon

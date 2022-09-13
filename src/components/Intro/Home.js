@@ -1,13 +1,29 @@
 import Button from "../Button/Button";
 import "./Home.css";
+import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { useLayoutEffect, useRef } from "react";
 
 const Home = () => {
+  const element = useRef();
+  const q = gsap.utils.selector(element);
+
+  useLayoutEffect(() => {
+    gsap.to(q(".fastest-div"), {
+        autoAlpha:0,
+      stagger: 2,
+      repeat: -1,
+      repeatDelay: 1,
+      yoyo: true
+    },)
+  })
+
+
   return (
     <main>
-          <div className='App'>
+          <div className='App' ref={element}>
       <div className="save-div">
         <div className="fastest-div">
            <div className="save-p-div">
@@ -37,7 +53,7 @@ const Home = () => {
       <section className="numbers-section">
         <div className="numbers-icons-div">
           <div className="numbers-icons-image-div" >
-<img src="./images/icon.png" alt="icon showing a graph" />
+<img src="./images/icon.png"  />
           </div>
           
           <div className="numbers-figures-div">
@@ -48,7 +64,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                     <div className="numbers-icons-image-div" >
-          <img src="./images/icon2.png" alt="icon showing a faceless person" />
+          <img src="./images/icon2.png"  />
           </div>
           <div className="numbers-figures-div">
             <h2>10M+</h2>
@@ -58,7 +74,7 @@ const Home = () => {
 
         <div className="numbers-icons-div">
                         <div className="numbers-icons-image-div" >
-          <img src="./images/icon1.png" alt="icon showing the world map" />
+          <img src="./images/icon1.png"  />
           </div>
           <div className="numbers-figures-div">
             <h2>195</h2>
