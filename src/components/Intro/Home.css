@@ -27,7 +27,13 @@
 .crypto-div p {
     font-size: .8rem;
     font-weight: 100;
+}
 
+.trade-text-p {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
 }
 
 .fastest-div h1 {
@@ -201,6 +207,8 @@
 
 .trade-section-hash-rate-form input {
     border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .trade-section-hash-rate-estimated {
@@ -250,6 +258,7 @@
     justify-content: space-between;
     border-bottom: 1px solid #E0E0E0;
     background-color: transparent;
+    margin-bottom: 1rem;
 }
 
 .trade-section-hash-rate-dropdown p {
@@ -547,6 +556,7 @@
 
     .trade-section-hash-rate-dropdown {
         width: 20%;
+        margin-bottom: 0;
     }
 
     .trade-section-hash-rate-form {
@@ -558,6 +568,7 @@
 
     .trade-section-hash-rate-form input {
         width: 40%;
+        margin-bottom: 0;
     }
 
     .trade-section-estimated-eth {
@@ -583,16 +594,6 @@
         margin-top: 0;
         max-width: 400px;
     }
-
-    .trade-text-p {
-        width: 70%;
-        margin: 0 auto;
-        line-height: 1.8;
-        letter-spacing: 0.01em;
-    }
-
-
-
 
 
     /*********************** Features section****************************************/
