@@ -53,8 +53,7 @@ const Home = () => {
       <section className="numbers-section">
         <div className="numbers-icons-div">
           <div className="numbers-icons-image-div" >
-              {/* <img src="./images/icon.png" alt="icon showing a graph" /> */}
-              <img src="./images/bitcon.png" />
+              <img src="./images/licon.png" alt="icon showing a graph" />
           </div>
           
           <div className="numbers-figures-div">
