@@ -101,10 +101,43 @@ const Home = () => {
         trigger: ".trade-securely-start",
         pin:true,
       }
-      
     })
 
-   
+    const loopCard = () => {
+      const cards = document.querySelectorAll(".features-section-card-img-div")
+      cards.forEach((element, index) => {
+        if (index % 2 === 0) {
+        gsap.from(element, {
+           x: 50,
+          opacity: 0,
+          duration:0.1,
+          ease:"power1.inOut",
+          scrollTrigger: {
+            trigger: element,
+            start: "top top+=250",
+            end:"top top +=400",
+            markers: true,
+            scrub:true
+          }
+        })          
+        } else {
+                  gsap.from(element, {
+           x: -50,
+                    opacity: 0,
+          ease:"power1.inOut",
+          scrollTrigger: {
+            trigger: element,
+            start: "top top+=250",
+               end:"top top +=400",
+            markers: true,
+            scrub:true
+          }
+        })
+        }
+
+      });
+    }
+    loopCard();
   },[])
 
 
@@ -284,7 +317,7 @@ const Home = () => {
         </div>
 
         <div className="features-section-card features-section-card-reverse">
-          <div className="features-section-card-text-div">
+          <div className="features-section-card-text-div features-section-card-img-div-1">
             <h6>Detailed Statistics</h6>
             <p>
               View all mining related information in realtime, at any point at
