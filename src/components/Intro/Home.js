@@ -116,7 +116,6 @@ const Home = () => {
             trigger: element,
             start: "top top+=250",
             end:"top top +=400",
-            markers: true,
             scrub:true
           }
         })          
@@ -129,7 +128,6 @@ const Home = () => {
             trigger: element,
             start: "top top+=250",
                end:"top top +=400",
-            markers: true,
             scrub:true
           }
         })
