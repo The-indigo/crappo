@@ -8,8 +8,11 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@for
 import { useLayoutEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  const tl = gsap.timeline();
-  let whyChooseTl = gsap.timeline();
+  const tl = gsap.timeline({
+    defaults: {
+        immediateRender:false,
+    }
+  });
   const element = useRef();
   const q = gsap.utils.selector(element);
 
@@ -20,7 +23,6 @@ const Home = () => {
         autoAlpha:0
     },{
         autoAlpha: 1,
-            immediateRender:false,
 
         y: 0,
       duration:1,
@@ -31,8 +33,10 @@ const Home = () => {
       // repeatDelay: 1,
       // yoyo: true
     }).from((".saveimg-div"), {
-      x: 70,
-      duration: 2,
+      y: 70,
+      opacity: 0,
+      ease: "power1.out",
+      duration: 1.5,
       // run when the previous tween has ran 10% of its duration
     },"<10%")
   
@@ -69,8 +73,6 @@ const Home = () => {
            trigger: ".why-section-container",
         ease: "Power1.inOut",
          start: "top bottom-=300px",
-         markers: true,
-
       }  
     })
       
@@ -80,13 +82,26 @@ const Home = () => {
       opacity: 0,
       stagger: 0.7,
         duration: 1,
+        
           scrollTrigger: {
-           trigger: ".why-section-container",
+            trigger: ".why-section-container",
+                        immediateRender:false,
+
         ease: "Power1.inOut",
          start: "top bottom-=400px",
-         markers: true,
-
       }  
+      })
+    gsap.from(".crypto-div", {
+      x: -400,
+      autoAlpha:0,
+      duration: 1,
+      rotate:"25%",
+      ease: "power1.inOut",
+      scrollTrigger:{
+        trigger: ".trade-securely-start",
+        pin:true,
+      }
+      
     })
 
    
@@ -199,7 +214,7 @@ const Home = () => {
           </div>
         </div>
         
-        <h4>Trade securely and market the high growth cryptocurrencies.</h4>
+        <h4 className="trade-securely-start">Trade securely and market the high growth cryptocurrencies.</h4>
         <div className=" trade-securely-div">
           <div className="crypto-div crypto-blue-card">
             <img src="./images/bitcon.png" />
