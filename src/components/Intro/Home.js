@@ -1,24 +1,78 @@
 import Button from "../Button/Button";
 import "./Home.css";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/src/all";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown,faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useLayoutEffect, useRef } from "react";
-
+gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
+  const tl = gsap.timeline();
   const element = useRef();
   const q = gsap.utils.selector(element);
 
-  // useLayoutEffect(() => {
-  //   gsap.to(q(".fastest-div"), {
-  //       autoAlpha:0,
-  //     stagger: 2,
-  //     repeat: -1,
-  //     repeatDelay: 1,
-  //     yoyo: true
-  //   },)
-  // })
+  useLayoutEffect(() => {
+    tl.fromTo(q(".anim"),
+      {
+        y: -30,
+        autoAlpha:0
+    },{
+        autoAlpha: 1,
+            immediateRender:false,
+
+        y: 0,
+      duration:1,
+      stagger: 0.3,
+      ease: "power1.inOut",
+      // delay:2
+      // repeat: -1,
+      // repeatDelay: 1,
+      // yoyo: true
+    }).from((".saveimg-div"), {
+      x: 70,
+      duration: 2,
+      // run when the previous tween has ran 10% of its duration
+    },"<10%")
+  
+  }, [])
+  useLayoutEffect(() => {
+    gsap.from(q(".numbers-icons-div"), {
+      y: 90,
+      opacity:0,
+      ease: "power1.inOut",
+      duration:0.4,
+      stagger:0.3,
+      scrollTrigger: {
+        trigger: ".save-div",
+        // start when the botom of sav-div enters the center of the viewport
+        start: "bottom center",
+        // stop after scrolling 80% beyond the start
+        end:"80%",
+        scrub: true,
+      // markers:true
+      }
+    })
+
+    gsap.fromTo((".why-img-div"), {
+      y: -20,
+    }, {
+      y: 0,
+      duration: 0.9,
+      yoyo: true,
+      ease: "Power1.easeInOut",
+      immediateRender:false,
+      repeat:-1,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".why-section-container",
+        start: "top bottom-=250px",
+      }  
+    })
+
+
+   
+  },[])
 
 
   return (
@@ -26,22 +80,20 @@ const Home = () => {
           <div className='App' ref={element}>
       <div className="save-div">
         <div className="fastest-div">
-           <div className="save-p-div">
+           <div className="save-p-div anim">
           <p className="save-p-70">70% SAVE </p>
           <p>For the Black Friday weekend</p>
         </div>
-        <h1>Fastest & Secure Platform To Invest In Crypto</h1>
-        <p>
+        <h1 className="anim">Fastest & Secure Platform To Invest In Crypto</h1>
+        <p className="anim">
           Buy and sell cryptocurrencies by trusted 10M wallets, in over 100m
           transactions
         </p>
             <Button
+              className2="anim"
               font
           buttonText={
-            <>
-              Try For Free<span></span>
-            </>
-          }
+              "Try For Free"}            
         />
       </div>
       <div className="saveimg-div">

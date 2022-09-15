@@ -2,6 +2,10 @@ input {
     font-size: 100%;
 }
 
+.anim {
+    /* border: 2px solid red */
+}
+
 .crypto-blue-card {
     background-color: #2B076E;
     color: #fff;
@@ -528,6 +532,7 @@ input {
     }
 
     .why-img-div {
+        /* border: 2px solid red; */
         /* width: 48%; */
     }
 
