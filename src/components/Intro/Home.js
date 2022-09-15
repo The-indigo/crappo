@@ -9,6 +9,7 @@ import { useLayoutEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const tl = gsap.timeline();
+  let whyChooseTl = gsap.timeline();
   const element = useRef();
   const q = gsap.utils.selector(element);
 
@@ -64,12 +65,29 @@ const Home = () => {
       immediateRender:false,
       repeat:-1,
       opacity: 1,
-      scrollTrigger: {
-        trigger: ".why-section-container",
-        start: "top bottom-=250px",
+          scrollTrigger: {
+           trigger: ".why-section-container",
+        ease: "Power1.inOut",
+         start: "top bottom-=300px",
+         markers: true,
+
       }  
     })
+      
+      gsap.from([".why-choose h3", ".why-choose p", ".why-choose-btn"], {
+      x: 150,
+        scale: -1,
+      opacity: 0,
+      stagger: 0.7,
+        duration: 1,
+          scrollTrigger: {
+           trigger: ".why-section-container",
+        ease: "Power1.inOut",
+         start: "top bottom-=400px",
+         markers: true,
 
+      }  
+    })
 
    
   },[])
@@ -149,7 +167,7 @@ const Home = () => {
             Experience the next generation cryptocurrency platform. No financial
             borders, extra fees, and fake reviews.
           </p>
-          <Button buttonText={"Learn More"} />
+          <Button className2={"why-choose-btn"} buttonText={"Learn More"} />
             </div>
             </div>
       </section>
